@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dungeon_stone_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_quest"
+            android:textColor="@color/parchment"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:hint="@string/quest_title"
+            app:boxBackgroundColor="@color/dungeon_stone_mid">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_task_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/parchment"
+                android:textColorHint="@color/amber_dim"
+                android:typeface="monospace" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/priority"
+            android:textColor="@color/parchment"
+            android:typeface="monospace" />
+
+        <Spinner
+            android:id="@+id/sp_priority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_dungeon_input"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/raid_mode"
+            android:textColor="@color/parchment"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/cb_raid_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:buttonTint="@color/amber"
+            android:text="@string/raid_enable"
+            android:textColor="@color/parchment"
+            android:typeface="monospace" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_raid_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/raid_room_code"
+            android:visibility="gone"
+            app:boxBackgroundColor="@color/dungeon_stone_mid">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_raid_room_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLength="10"
+                android:textAllCaps="true"
+                android:textColor="@color/parchment"
+                android:textColorHint="@color/amber_dim"
+                android:typeface="monospace" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_raid_actions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_raid_generate"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:text="@string/raid_generate_room"
+                android:textColor="@color/parchment"
+                android:textSize="11sp"
+                app:strokeColor="@color/amber"
+                app:strokeWidth="2dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_raid_host"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="3dp"
+                android:layout_weight="1"
+                android:text="@string/raid_host_create"
+                android:textColor="@color/parchment"
+                android:textSize="11sp"
+                app:strokeColor="@color/amber"
+                app:strokeWidth="2dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_raid_join"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:text="@string/raid_join_room"
+                android:textColor="@color/parchment"
+                android:textSize="11sp"
+                app:strokeColor="@color/amber"
+                app:strokeWidth="2dp" />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_raid_assign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/raid_assigned_to"
+            android:visibility="gone"
+            app:boxBackgroundColor="@color/dungeon_stone_mid">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_raid_assigned_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/parchment"
+                android:textColorHint="@color/amber_dim"
+                android:typeface="monospace" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_raid_hp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/raid_hp_points"
+            android:visibility="gone"
+            app:boxBackgroundColor="@color/dungeon_stone_mid">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_raid_hp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="1"
+                android:textColor="@color/parchment"
+                android:textColorHint="@color/amber_dim"
+                android:typeface="monospace" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/amber"
+            android:text="@string/save_quest"
+            android:textColor="@color/dungeon_stone_dark"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+    </LinearLayout>
+</ScrollView>

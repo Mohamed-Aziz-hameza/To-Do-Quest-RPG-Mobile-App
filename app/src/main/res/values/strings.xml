@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">TodoQuest</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_tasks">Quests</string>
+    <string name="nav_dungeon">Dungeon</string>
+    <string name="nav_achievements">Achievements</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_shop">Shop</string>
+
+    <string name="hall_of_creation">HALL OF CREATION</string>
+    <string name="enter_hero_name">Enter your hero name...</string>
+    <string name="hero_name_required">Hero name is required.</string>
+    <string name="male">MALE</string>
+    <string name="female">FEMALE</string>
+    <string name="begin_quest">BEGIN YOUR QUEST</string>
+    <string name="avatar_one">Avatar option one</string>
+    <string name="avatar_two">Avatar option two</string>
+    <string name="character_creation_bg">Hall background</string>
+
+    <string name="default_hero_name">Nameless Hero</string>
+    <string name="class_warrior_badge">WARRIOR</string>
+    <string name="class_mage_badge">MAGE</string>
+    <string name="rookie_adventurer">ROOKIE ADVENTURER</string>
+    <string name="health_line">Health: %1$d / %2$d</string>
+    <string name="strength_line">Strength: %1$d</string>
+    <string name="speed_line">Speed: %1$d</string>
+    <string name="defense_line">Defense: %1$d</string>
+    <string name="xp_line">XP: %1$d / %2$d - Level %3$d</string>
+    <string name="streak_line">Streak: %1$d day(s)</string>
+    <string name="coins_line">Coins: %1$d</string>
+    <string name="keys_line">Keys: %1$d available</string>
+    <string name="free_stats_line">Free stat points: %1$d</string>
+    <string name="allocate_stats">Allocate Stats</string>
+    <string name="allocate_stats_message">Distribute your free points across Strength, Speed, and Health.</string>
+    <string name="allocate_strength_hint">Strength points</string>
+    <string name="allocate_speed_hint">Speed points</string>
+    <string name="allocate_health_hint">Health points</string>
+    <string name="apply_points">Apply</string>
+    <string name="daily_quests">DAILY QUESTS</string>
+    <string name="daily_first_steps">FIRST STEPS - Create 1 task (Reward: 1 key, +15 XP, +10 coins)</string>
+    <string name="daily_quest_slayer">QUEST SLAYER - Complete 1 task (Reward: 1 key, +25 XP, +15 coins)</string>
+    <string name="daily_dungeon_ready">DUNGEON READY - Both done (Reward: 1 key, +30 XP, +20 coins)</string>
+    <string name="hero_avatar">Hero avatar</string>
+    <string name="weapon_slot">Weapon Slot</string>
+    <string name="shield_slot">Shield Slot</string>
+    <string name="toggle_weapon_prompt">Equip or unequip your weapon?</string>
+    <string name="toggle_shield_prompt">Equip or unequip your shield?</string>
+
+    <string name="quest_log">QUEST LOG</string>
+    <string name="no_quests">No quests yet. Add one.</string>
+    <string name="add_quest">Add quest</string>
+    <string name="new_quest">NEW QUEST</string>
+    <string name="quest_title">Quest title</string>
+    <string name="priority">Priority</string>
+    <string name="save_quest">Save Quest</string>
+    <string name="title_required">Title is required</string>
+
+    <string name="dungeon_realm">DUNGEON REALM</string>
+    <string name="keys_caps_line">KEYS: %1$d</string>
+    <string name="goblin_dungeon">GOBLIN DUNGEON</string>
+    <string name="goblin_subtitle">Beware the High Goblin King...</string>
+    <string name="goblin_difficulty">Difficulty: **☆☆☆</string>
+    <string name="enter_dungeon">ENTER DUNGEON</string>
+    <string name="need_key">Need a Key</string>
+
+    <string name="dungeon_bg">Dungeon background</string>
+    <string name="enemy">Enemy</string>
+    <string name="action_attack">ATTACK</string>
+    <string name="action_defend">DEFEND</string>
+    <string name="action_special">SPECIAL</string>
+    <string name="action_flee">FLEE</string>
+    <string name="boss_awaits">THE HIGH GOBLIN KING AWAITS...</string>
+    <string name="victory_title">VICTORY</string>
+    <string name="victory_body">XP +%1$d\nCoins +%2$d\nKeys +%3$d</string>
+    <string name="defeat_title">YOU HAVE FALLEN...</string>
+    <string name="defeat_body">Rise again or leave the dungeon.</string>
+    <string name="retry_one_key">Retry (1 key)</string>
+    <string name="exit">Exit</string>
+    <string name="close">Close</string>
+
+    <string name="armory_title">THE ARMORY</string>
+    <string name="fire_sword">FIRE SWORD</string>
+    <string name="fire_sword_stats">ATK +18   SPD +3</string>
+    <string name="fire_sword_desc">Forged in dragon fire. Enemies feel its wrath.</string>
+    <string name="fire_sword_price">Price: 120 coins</string>
+    <string name="iron_shield">IRON SHIELD</string>
+    <string name="iron_shield_stats">DEF +22   SPD -1</string>
+    <string name="iron_shield_desc">Blessed by the ancients. Bears a ruby of protection.</string>
+    <string name="iron_shield_price">Price: 90 coins</string>
+    <string name="buy">BUY</string>
+    <string name="equip">EQUIP</string>
+    <string name="unequip">UNEQUIP</string>
+
+    <string name="profile_level">Level: %1$d</string>
+    <string name="profile_xp_to_next">XP to next level: %1$d</string>
+    <string name="profile_tasks_completed">Total tasks completed: %1$d</string>
+    <string name="profile_dungeon_wins">Dungeon wins: %1$d</string>
+    <string name="profile_streak">Streak: %1$d day(s)</string>
+    <string name="open_armory">Open Armory</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="locked">Locked</string>
+    <string name="task_deleted">Task deleted</string>
+    <string name="undo">Undo</string>
+    <string name="add_edit_task_title">Add Quest</string>
+
+    <string name="auth_title">CONNECT YOUR ACCOUNT</string>
+    <string name="auth_email">Email</string>
+    <string name="auth_password">Password</string>
+    <string name="auth_login">Login with Email</string>
+    <string name="auth_register">Create Account</string>
+    <string name="auth_google">Login with Google</string>
+    <string name="auth_or">or</string>
+    <string name="auth_fill_required">Email and password are required.</string>
+    <string name="auth_failed">Authentication failed.</string>
+    <string name="auth_google_failed">Google sign in failed.</string>
+    <string name="auth_google_failed_with_code">Google sign in failed (code: %1$d).</string>
+    <string name="auth_google_missing_token">Google sign in succeeded but no ID token was returned. Check Firebase Google configuration and replace google-services.json.</string>
+    <string name="auth_google_network_error">Network error during Google sign in. Check internet and try again.</string>
+    <string name="auth_google_developer_error">Google sign in configuration mismatch. In Firebase, verify Android package (%1$s) and add this app SHA-1: %2$s. Then download a fresh google-services.json.</string>
+    <string name="auth_google_sign_in_failed_config">Google sign in failed due to OAuth configuration. Confirm Google provider is enabled and SHA keys are registered.</string>
+    <string name="auth_google_cancelled">Google sign in cancelled.</string>
+    <string name="auth_google_client_id_missing">Google sign-in is not configured. Enable Google provider, add SHA keys, then download an updated google-services.json.</string>
+    <string name="auth_google_setup_hint">Google login unavailable: update Firebase Google provider + SHA-1/SHA-256, then replace app/google-services.json.</string>
+    <string name="google_web_client_id" translatable="false">UNSET_WEB_CLIENT_ID</string>
+    <string name="firebase_database_url">https://mobile-project-efe46-default-rtdb.firebaseio.com</string>
+
+    <string name="raid_mode">RAID MODE</string>
+    <string name="raid_enable">Create this quest in a shared raid room</string>
+    <string name="raid_room_code">Raid room code</string>
+    <string name="raid_generate_room">Generate room code</string>
+    <string name="raid_join_room">Join room</string>
+    <string name="raid_host_create">Host: create room</string>
+    <string name="raid_assigned_to">Assign to member (email or uid)</string>
+    <string name="raid_hp_points">Task HP contribution</string>
+    <string name="raid_room_required">Raid room code is required.</string>
+    <string name="raid_created">Raid room ready.</string>
+    <string name="raid_joined">Joined raid room.</string>
+    <string name="raid_failed">Raid action failed.</string>
+    <string name="raid_boss">RAID BOSS</string>
+    <string name="raid_hp_line">HP: %1$d / %2$d</string>
+    <string name="raid_assigned_line">Assigned: %1$s</string>
+    <string name="raid_room_line">Room: %1$s</string>
+</resources>

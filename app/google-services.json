@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1017964739282",
+    "firebase_url": "https://mobile-project-efe46-default-rtdb.firebaseio.com",
+    "project_id": "mobile-project-efe46",
+    "storage_bucket": "mobile-project-efe46.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017964739282:android:6ccb529bcbd84efcff8b0b",
+        "android_client_info": {
+          "package_name": "com.example.todoquest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1017964739282-76e06nmoa3pennaebtb1rshc561rmend.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.todoquest",
+            "certificate_hash": "f2e257ea533861683cb5fea2b4b41d4b263595ff"
+          }
+        },
+        {
+          "client_id": "1017964739282-hf7b3l18ec0bdiocnncpa70lp8gh68v7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvsDI3VG2Xj3fRbVFgscIE1tRn8oovHcQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1017964739282-hf7b3l18ec0bdiocnncpa70lp8gh68v7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

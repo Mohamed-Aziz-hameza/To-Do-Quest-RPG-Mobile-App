@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@id/homeFragment"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="@string/nav_home" />
+
+    <item
+        android:id="@id/taskListFragment"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="@string/nav_tasks" />
+
+    <item
+        android:id="@id/dungeonFragment"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="@string/nav_dungeon" />
+
+    <item
+        android:id="@id/achievementsFragment"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="@string/nav_achievements" />
+
+    <item
+        android:id="@id/profileFragment"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="@string/nav_profile" />
+</menu>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dungeon_stone_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dungeon_stone_mid"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            app:strokeColor="@color/amber"
+            app:strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/iv_hero_avatar"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:contentDescription="@string/hero_avatar"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/maleoption1"
+                    app:strokeColor="@color/amber"
+                    app:strokeWidth="3dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_hero_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hero"
+                        android:textColor="@color/parchment"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:typeface="monospace" />
+
+                    <TextView
+                        android:id="@+id/tv_class_badge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/bg_badge"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="4dp"
+                        android:text="WARRIOR"
+                        android:textColor="@color/parchment"
+                        android:textSize="11sp"
+                        android:typeface="monospace" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/dungeon_stone_mid"
+            app:cardCornerRadius="14dp"
+            app:strokeColor="@color/amber"
+            app:strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/tv_health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/parchment"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
+                <ProgressBar
+                    android:id="@+id/pb_health"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="6dp"
+                    android:max="100"
+                    android:progress="100"
+                    android:progressTint="#D1403F" />
+
+                <TextView
+                    android:id="@+id/tv_strength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/amber"
+                    android:typeface="monospace" />
+
+                <TextView
+                    android:id="@+id/tv_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#55A8FF"
+                    android:typeface="monospace" />
+
+                <TextView
+                    android:id="@+id/tv_defense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#B0B0B0"
+                    android:typeface="monospace" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_weapon_slot"
+                android:layout_width="0dp"
+                android:layout_height="72dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_avatar_unselected"
+                android:contentDescription="@string/weapon_slot"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sword" />
+
+            <ImageButton
+                android:id="@+id/btn_shield_slot"
+                android:layout_width="0dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_avatar_unselected"
+                android:contentDescription="@string/shield_slot"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/shield" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_xp_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/parchment"
+            android:typeface="monospace" />
+
+        <ProgressBar
+            android:id="@+id/pb_xp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_marginTop="6dp"
+            android:max="100"
+            android:progress="0"
+            android:progressTint="@color/amber"
+            android:progressBackgroundTint="@color/dungeon_brown" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_streak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/amber"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/tv_coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/parchment"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/tv_keys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/parchment"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/tv_free_stats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/amber"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_allocate_stats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="@color/amber"
+                android:text="@string/allocate_stats"
+                android:textColor="@color/dungeon_stone_dark"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/dungeon_stone_mid"
+            app:cardCornerRadius="14dp"
+            app:strokeColor="@color/amber"
+            app:strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/daily_quests"
+                    android:textColor="@color/parchment"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
+                <CheckBox
+                    android:id="@+id/cb_daily_created"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:text="@string/daily_first_steps"
+                    android:textColor="@color/parchment"
+                    android:typeface="monospace" />
+
+                <CheckBox
+                    android:id="@+id/cb_daily_completed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:text="@string/daily_quest_slayer"
+                    android:textColor="@color/parchment"
+                    android:typeface="monospace" />
+
+                <CheckBox
+                    android:id="@+id/cb_daily_combo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:text="@string/daily_dungeon_ready"
+                    android:textColor="@color/parchment"
+                    android:typeface="monospace" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.todoquest.ui.HomeFragment"
+        android:label="@string/nav_home" />
+
+    <fragment
+        android:id="@+id/taskListFragment"
+        android:name="com.example.todoquest.ui.TaskListFragment"
+        android:label="@string/nav_tasks">
+
+        <action
+            android:id="@+id/action_taskListFragment_to_addEditTaskFragment"
+            app:destination="@id/addEditTaskFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addEditTaskFragment"
+        android:name="com.example.todoquest.ui.AddEditTaskFragment"
+        android:label="@string/add_edit_task_title" />
+
+    <fragment
+        android:id="@+id/dungeonFragment"
+        android:name="com.example.todoquest.ui.DungeonFragment"
+        android:label="@string/nav_dungeon" />
+
+    <fragment
+        android:id="@+id/achievementsFragment"
+        android:name="com.example.todoquest.ui.AchievementsFragment"
+        android:label="@string/nav_achievements" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.todoquest.ui.ProfileFragment"
+        android:label="@string/nav_profile">
+
+        <action
+            android:id="@+id/action_profileFragment_to_shopFragment"
+            app:destination="@id/shopFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.example.todoquest.ui.ShopFragment"
+        android:label="@string/nav_shop" />
+</navigation>

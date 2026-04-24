@@ -1,0 +1,38 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "users": {
+      "$uid": {
+        ".read": "auth != null && auth.uid == $uid",
+        ".write": "auth != null && auth.uid == $uid",
+        "joinedRaids": {
+          "$room": {
+            ".validate": "newData.isBoolean()"
+          }
+        }
+      }
+    },
+    "raids": {
+      "$room": {
+        "meta": {
+          ".read": "auth != null && root.child('raids').child($room).child('members').child(auth.uid).exists()",
+          ".write": "auth != null && (!data.exists() || data.child('hostUid').val() == auth.uid)"
+        },
+        "members": {
+          "$memberUid": {
+            ".read": "auth != null && root.child('raids').child($room).child('members').child(auth.uid).exists()",
+            ".write": "auth != null && ($memberUid == auth.uid || root.child('raids').child($room).child('meta').child('hostUid').val() == auth.uid)"
+          }
+        },
+        "tasks": {
+          "$taskId": {
+            ".read": "auth != null && root.child('raids').child($room).child('members').child(auth.uid).exists()",
+            ".write": "auth != null && root.child('raids').child($room).child('members').child(auth.uid).exists()"
+          }
+        }
+      }
+    }
+  }
+}
+
